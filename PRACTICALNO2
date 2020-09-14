@@ -1,0 +1,17 @@
+PRACTICAL NO 2
+1.To add a user
+useradd creates a new user account according to the options specified on the command line and the default values set in the /etc/default/useradd file.
+useradd [OPTIONS] USERNAME
+Command-$ sudo useradd username
+2.Network Settings
+netstat –I to find the interface name.
+Command-sudo ifconfig eth0 192.168.72.6 netmask 255.255.255.0
+To add a default gateway
+Command-sudo route add default gw 192.168.72.1 eth0
+4.Configure service
+Command-sudo systemctl start service
+5.Display the list service
+To list all loaded services on your system (whether active; running, exited or failed, use the list-units subcommand and --type switch with a value of service.
+# systemctl list-units --type=service
+OR
+# systemctl --type=service
